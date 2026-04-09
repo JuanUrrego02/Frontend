@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://misitio.vercel.app/sitemap.xml
+ 
