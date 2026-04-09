@@ -1,4 +1,4 @@
-const API = "https://estudiantes-backend-1.onrender.com";
+const API = "https://estudiantes-backend-1.onrender.com/api/estudiantes";
 
 const getToken = () => localStorage.getItem("token");
 
@@ -25,13 +25,14 @@ export const createEstudiante = async (data) => {
     body: JSON.stringify(data),
   });
 
+  const response = await res.json();
+
   if (!res.ok) {
-    const error = await res.json();
-    console.log("ERROR BACKEND:", error);
-    throw new Error(error.message || "Error al crear estudiante");
+    console.log("ERROR BACKEND:", response);
+    throw new Error(response.message || "Error al crear estudiante");
   }
 
-  return res.json();
+  return response;
 };
 
 // ✏️ PUT - actualizar estudiante
