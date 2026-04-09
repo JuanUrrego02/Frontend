@@ -69,7 +69,7 @@ export default function Register() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("https://estudiantes-backend-1.onrender.com", {
+      const res = await fetch("https://estudiantes-backend-1.onrender.com/api/auth/registro", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

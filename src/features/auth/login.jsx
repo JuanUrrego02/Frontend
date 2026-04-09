@@ -47,7 +47,7 @@ export default function Login() {
         if (!validate()) return;
 
         try {
-            const res = await fetch("https://estudiantes-backend-1.onrender.com", {
+            const res = await fetch("https://estudiantes-backend-1.onrender.com/api/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
