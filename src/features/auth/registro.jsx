@@ -99,9 +99,9 @@ export default function Register() {
       console.error(error);
       alert("Error de conexión con el servidor");
     }
-  };
+};
 
-  return (
+return (
     <Box
       sx={{
         minHeight: "100vh",

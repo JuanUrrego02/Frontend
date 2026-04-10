@@ -103,7 +103,7 @@ const Footer = () => {
           }}
         >
           <Typography variant="body2" sx={{ opacity: 0.7 }}>
-            © {new Date().getFullYear()} SpeedWagon — Todos los derechos reservados
+            © {new Date().getFullYear()} SpeedWagon — Todos los derechos reservados.
           </Typography>
         </Box>
 
