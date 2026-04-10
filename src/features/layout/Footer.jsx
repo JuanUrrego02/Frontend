@@ -75,8 +75,13 @@ const Footer = () => {
               <IconButton sx={{ color: "white", "&:hover": { color: "#A5D6A7" } }}>
                 <InstagramIcon />
               </IconButton>
-
-              <IconButton sx={{ color: "white", "&:hover": { color: "#A5D6A7" } }}>
+              <IconButton
+                component="a"
+                href="https://github.com/JuanUrrego02/Frontend.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ color: "white", "&:hover": { color: "#A5D6A7" } }}
+              >
                 <GitHubIcon />
               </IconButton>
             </Box>
